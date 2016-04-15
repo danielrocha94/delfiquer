@@ -1,0 +1,30 @@
+{
+  "name": "dc_realtime",
+  "version": "3.0.0",
+  "description": "Realtime socket server for udp/socket.io comunication",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register -R spec -u bdd -w",
+    "start": "(coffee --compile -o dist --watch &);./node_modules/nodemon/bin/nodemon.js index.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/jcarlos7121/dc_realtime.git"
+  },
+  "keywords": [
+    "realtime",
+    "socket.io",
+    "udp"
+  ],
+  "author": "Rosario Delgado & Juan Carlos Hinojo",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jcarlos7121/dc_realtime#readme",
+  "devDependencies": {
+    "mocha": "^2.3.2",
+    "should": "^7.1.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "nodemon": "^1.5.1"
+  }
+}

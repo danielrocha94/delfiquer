@@ -1,0 +1,24 @@
+<div id="patient-info" class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  <div class="chart <%= style if defined? style %>">
+    <div class="area">
+
+      <div class="title-bar">
+        <h3><%= title %></h3>
+      </div>
+
+      <ul>
+        <li> Nombre: <span><%= patient.name %></span></li>
+        <li> Direccion: <span><%= patient.address %></span></li>
+        <li> Edad: <span><%= patient.age %></span></li>
+        <li> Sexo: <span><%= patient.gender %></span></li>
+        <li> Tipo de Sangre: <span><%= patient.blood_type %></span></li>
+        <li> Talla: <span><%= patient.size %></span></li>
+        <li> Oxigenación: <span id="SpO2"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="box no-padding">
+    <div class="inner">
+    </div>
+  </div>
+</div>

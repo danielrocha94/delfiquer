@@ -1,0 +1,4 @@
+# .yardopts
+'app/**/*.rb'
+'db/schema.rb'
+"{lib,app}/**/*.rb" --plugin rails-plugin - tmp/routes.html

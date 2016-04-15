@@ -1,0 +1,25 @@
+<div class="sidebar" style="min-height: 658px;">
+  <div class="logo-container" id="step1">
+    <h1>Delphicare</h1>
+  </div>
+
+  <div class="sidebar-profile">
+    <div class="user-avatar">
+      <%= image_tag 'blank.png', style: "background-image: url(#{patient.try(:avatar).try(:url)});"  %>
+    </div>
+    <div class="user-info">
+      <p><%= patient.try(:name) %></p>
+    </div>
+  </div>
+
+  <ul class="menu">
+    <li class="marine">
+      <% collection.each do |patient| %>
+        <%= link_to patient do%>
+          <span class="menu-text"><%= patient.name %></span>
+        <% end %>
+      <% end %>
+    </li>
+  </ul>
+</div>
+

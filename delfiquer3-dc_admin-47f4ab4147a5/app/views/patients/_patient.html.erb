@@ -1,0 +1,21 @@
+<section class="content">
+  <%= render 'components/sidebar_dashboard' %>
+
+  <div class="content-liquid-full">
+    <div class="container">
+      <%= render 'components/header' %>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <div class="row" id="step4">
+            <% if @patient %>
+              <%= render partial: 'components/delphicare_module_canvas', locals: { title: 'Electrocardiograma', style: 'revenue' } %>
+              <%= render partial: 'components/delphicare_module_info', locals: { title: 'Information', style: 'social-stats' } %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
